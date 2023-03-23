@@ -1,0 +1,274 @@
+.header {	
+	width: 100%;
+	position: absolute;
+	z-index: 50;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		min-height: 125px;
+		@media (max-width:667px) {
+		 min-height: 80px;
+		}
+	}
+
+	&__container-menu{
+		margin: 0 auto;
+		max-width: 1040px; // Указать ширену полотна +20px //
+		padding: 0px 10px;
+	}
+
+	&__burger {
+		
+	}
+
+	&__logo {
+		display: flex;
+		position: relative;
+		z-index: 5;
+		max-width: 100%;
+		flex: 0 0 115px;
+		@media (max-width:500px) {
+		 flex: 0 0 73px;
+		}
+	}
+
+	&__phone {
+	}
+
+	.menu {
+		position: fixed;
+		height: 100%;
+		background-color: #0075FF;
+		width: 100%;
+		transform: translate(-100%, 0);
+		transition: all 0.5s ease 0s;
+	}
+	.menu.active {
+		transform: translate(0, 0);
+		overflow: auto;
+	}
+
+	&__menu {
+		background-color: #0075FF;
+		left: 0;
+		top: 0;
+		position: absolute;
+		height: 100%;
+	}
+
+	&__list {
+		margin-top: 152px;
+		display: flex;
+		flex-direction: column;
+		gap: 32px;
+		margin-bottom: 48px;
+		li{
+		:hover{
+			border-bottom: 1px solid #fff;
+		}
+		}
+	}
+
+	&__link {
+		color: #fff;
+		@include font(22, 22);
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		border-bottom: 1px solid #0075FF;
+		transition: all 0.3s ease 0s;
+	}
+	&__phone-menu {
+		position: relative;
+		margin-bottom: 16px;
+		@include font(12, 16);
+		letter-spacing: 2px;
+		color: #fff;	
+	}
+	&__order {
+		position: relative;
+		::before{
+			content: '';
+			position: absolute;
+			bottom: -8px;
+			left: 0;
+			width: 110px;
+			height: 1px;
+			background-color: #fff;
+		}
+	}
+
+	&__order-link {
+		@include font(12, 16);
+		letter-spacing: 2px;
+		color: #fff;
+		text-transform: uppercase;
+	}
+}
+	.header__burger{
+		display: block;
+		position: relative;
+		width: 30px;
+		height: 20px;
+		position: relative;
+		z-index: 3;
+		@media (max-width:500px){
+			width: 20px;
+			height: 15px;
+		}
+	}
+	.header__burger span {
+		position: absolute;
+		background-color: #fff;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		top: 9px;
+		transition: all 0.3s ease 0s;
+		@media (max-width:500px){
+			top: 7px;
+		}
+	}
+	.header__burger:hover::before {
+		width: 20px;
+	}
+	.header__burger:hover::after {
+		width: 10px;
+	}
+	.header__burger::before,
+	.header__burger::after{
+		content: '';
+		background-color: #fff;
+		position: absolute;
+		width: 100%;
+		height: 2px;
+		left: 0;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger::before{
+		top: 0;
+	}
+	.header__burger::after{
+		bottom: 0;
+	}
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+		width: 100%;
+	}
+	.header__burger.active::after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+		width: 100%;
+		@media (max-width:500px){
+			bottom: 5px;
+		}
+	}
+	.header__burger.active span{
+		transform: scale(0);
+	}
+
+	.header__phone {
+		display: flex;
+		position: relative;
+		align-items: center;
+		
+	}
+	.header__phone-number {
+		display: none;
+	}
+	.header__phone-number.number {
+		display: flex;
+		position: absolute;
+		left: -105px;
+		width: 105px;
+		color: #fff;
+		font-size: 12px;
+		@media (max-width:400px){
+			font-size: 10px;
+			left: -90px;
+		}
+	}
+// 	* { box-sizing: border-box;}
+
+// $primaryColor: deeppink;
+// $dkBg: #303947;
+// $itemBg: #6788a7;
+// $itemBgOdd: darken(#6788a7,15%);
+
+// html, body {
+//   font-family: "Arial", sans-serif;
+//   background: #fff;
+//   padding: 80px 30px 30px;
+//   color: #444;
+//   height: 100%;
+// }
+
+// ol, ul {
+//   margin: 0 0 50px 0;
+// }
+
+// h1 {
+//   font-weight: bold;
+//   color: black;
+// }
+
+// p {
+//   line-height: 1.6em;
+//   margin-bottom: 10px;
+//   font-size: 18px;
+//   padding: 0;
+//   &:last-child {
+//     margin-bottom: 40px;
+//   }
+// }
+
+// code {
+//   background: #f8f8f8;
+//   color: #d64f9b;
+//   border: 1px solid #eee;
+//   padding: 2px;
+//   border-radius: 3px;
+// }
+
+// a {
+//   font-weight: bold;
+//   color: $primaryColor; 
+//   text-decoration: none;
+//   transition: all 200ms;
+//   &:hover,
+//   &:focus{
+//     color: black;
+//   }
+// }
+
+// article {
+// //   min-height: 50vh;
+//   margin-bottom: 50px;
+//   .margin {
+//     margin-bottom: 100vh;
+//   }
+// }
+
+// nav {
+//   display: flex;
+//   width: 100%;
+//   top: 0;
+//   left: 0;
+//   background: $dkBg;
+//   position: fixed;
+//   padding: 30px;
+//   a {
+//     display: inline-flex;
+//     padding: 20px 30px;
+//     color: #fff;
+//     text-decoration: none;
+//     &:hover,
+//     &:focus {
+//       color: white;
+//     }
+//     &.active {
+//       color: $primaryColor;
+//     }
+//   }
+// }

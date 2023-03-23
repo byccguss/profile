@@ -1,0 +1,9 @@
+.footer {
+
+	&__img {
+		width: 100%;
+		min-height: 210px;
+		object-fit: cover;
+		object-position: center;
+	}
+}

@@ -1,0 +1,164 @@
+// Пример как надо делать
+
+// бургер
+
+// .header {
+// 	position: fixed;
+// 	width: 100%;
+// 	top: 0;
+// 	left: 0;
+// 	z-index: 50;
+// }
+// .header::before{
+// 	content: '';
+// 	position: absolute;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	background-color: #5e5373;
+// 	z-index: 2;
+// }
+// .container {
+// 	max-width: 1180px;
+// 	margin: 0 auto;
+// 	padding: 0px 15px;
+// }
+// .header__body {
+// 	position: relative;
+// 	display: flex;
+// 	justify-content: space-between;
+// 	height: 5rem;
+// 	align-items: center;
+// }
+// .header__logo {
+// 	font-size: 24px;
+// 	color: #fff;
+// 	position: relative;
+// 	z-index: 3;
+// }
+// .header__burger {
+	
+// }
+// .header__list {
+// 	display: flex;
+// 	gap: 1.25rem;
+// 	position: relative;
+// 	z-index: 3;
+// }
+// .header__link {
+// 	color: #fff;
+// 	text-transform: capitalize;
+// 	font-size: 1.125rem;
+// }
+
+// Адаптивный бургер
+// @media (max-width:767px){    // Указать с какого момента будет бургер//
+// 	.header__burger{
+// 		display: block;
+// 		position: relative;
+// 		width: 30px;
+// 		height: 20px;
+// 		position: relative;
+// 		z-index: 3;
+// 	}
+// 	.header__burger span {
+// 		position: absolute;
+// 		background-color: #fff;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 2px;
+// 		top: 9px;
+// 		transition: all 0.3s ease 0s;
+// 	}
+// 	.header__burger::before,
+// 	.header__burger::after{
+// 		content: '';
+// 		background-color: #fff;
+// 		position: absolute;
+// 		width: 100%;
+// 		height: 2px;
+// 		left: 0;
+// 		transition: all 0.3s ease 0s;
+// 	}
+// 	.header__burger::before{
+// 		top: 0;
+// 	}
+// 	.header__burger::after{
+// 		bottom: 0;
+// 	}
+// 	.header__burger.active:before {
+// 		transform: rotate(45deg);
+// 		top: 9px;
+// 	}
+// 	.header__burger.active::after {
+// 		transform: rotate(-45deg);
+// 		bottom: 9px;
+// 	}
+// 	.header__burger.active span{
+// 		transform: scale(0);
+// 	}
+// 	.header__menu {
+// 		position: fixed;
+// 		top: -100%;
+// 		left: 0;
+// 		width: 100%;
+// 		height: 100%;
+// 		background-color: #18b5a4;   // Указать беграунд//
+// 		padding-top: 90px;
+// 		transition: all 0.5s ease 0s;
+// 		overflow: auto;
+// 	}
+// 	body.lock {
+// 		overflow: hidden;
+// 	}
+// 	.header__menu.active{
+// 		top: 0;
+// 	}
+// 	.header__list{
+// 		display: block;
+// 	}
+// 	.header__list li{
+// 		margin-bottom: 20px;
+// 		text-align: center;
+// 	}
+// 	.header__link {
+// 		font-size: 24px;
+// 	}
+// }
+
+// бургер
+
+ // Навигационый пункт
+
+// <!-- <nav class="nav">
+// 		<a href="#s1" class="active">Intro</a>
+// 		<a href="#s2">Compatibility</a>
+// 		<a href="#s3">Usage</a>
+// 		<a href="#s4">Credits</a>
+// 	 </nav>
+	 
+// 	 <article id="s1">
+// 		<h1>Smooth Anchor Scrolling</h1>
+// 		<p>This <b>Smooth Anchor Scrolling</b> pen was written to reduce the bloat of your project and provide a simple and easy solution for projects using Jquery to apply smooth link scrolling throughout your application or website.</p>
+// 		<p>Example link to <span class="nav"><a href="#s3">Usage</a></span></p>
+// 	 </article>
+	 
+// 	 <article id="s2">
+// 		<h2>Compatibility 👍</h2>
+// 		<p>Due to leveraging Jquery, this CodePen works well on all Browsers, both Desktop and Mobile also work perfectly.</p>
+// 	 </article>
+	 
+// 	 <article id="s3">
+// 		<h2>Usage</h2>
+// 		<p>Simply link to any <code>id</code> on your page from within your <code>.nav</code>.</p>
+// 	 </article>
+	 
+// 	 <article class="margin" id="s4">
+// 		<h2>Credits</h2>
+// 		<p>This script was written by myself and is intended for public use. please <b>do not</b> sell this script as an individual product. It may be included in your projects that are sold as an entire website or application.</p>
+// 		<p>If you like this pen, you can follow me on <a href="https://twitter.com/uixmat/" target="_blank">Twitter</a>.</p>
+// 	 </article> -->
+
+
+ // Навигационый пункт
