@@ -1,0 +1,38 @@
+@media (max-width: 500px) {
+  .footer__about {
+    margin-top: 100px;
+  }
+}
+.footer__text {
+  margin-right: 25px;
+  width: 143px;
+  margin-right: 50px;
+}
+.footer__about-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  margin: -25px 0px 25px 0px;
+}
+.footer__about-us :not(:last-child) {
+  margin-bottom: 12px;
+}
+.footer__contact {
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  width: 134px;
+  margin-top: -13px;
+  margin-bottom: 23px;
+}
+@media (max-width: 500px) {
+  .footer__contact {
+    margin-top: 40px;
+  }
+}
+.footer a {
+  display: block;
+  color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+}
