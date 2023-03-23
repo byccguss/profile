@@ -1,0 +1,15 @@
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 245px;
+  background-color: #2B2C2E;
+  color: white; }
+
+.footer__string {
+  height: 60px;
+  background-color: #1C1D1F;
+  color: white;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
